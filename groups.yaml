@@ -1,0 +1,8 @@
+---
+
+cisco_group:
+    platform: 'ios'
+    data:
+        ntp: 99.99.99.99
+        syslog: 99.99.99.99
+        snmp_community: ipvzero
