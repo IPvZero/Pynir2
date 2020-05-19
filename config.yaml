@@ -1,0 +1,11 @@
+---
+core:
+    num_workers: 10
+
+
+inventory:
+    plugin: nornir.plugins.inventory.simple.SimpleInventory
+    options:
+        host_file: "/home/ipvzero/Pynir2/hosts.yaml"
+        group_file: "/home/ipvzero/Pynir2/groups.yaml"
+        defaults_file: "/home/ipvzero/Pynir2/defaults.yaml"
