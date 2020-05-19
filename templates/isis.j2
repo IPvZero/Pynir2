@@ -1,0 +1,20 @@
+{% if 'ISIS' in host.facts %}
+router isis
+net {{ host.facts.ISIS.nsap }}
+is-type {{ host.facts.ISIS.level }}
+interface loopback0
+ip address {{ host.facts.ISIS.interfaces.loo0.ipaddr }}
+ip router isis
+{% set john = host.facts.ISIS.interfaces %}
+{% for key in john %}
+interface {{ key }}
+no switchport
+no shut
+{% if 'sub_iface' in john[key] %}
+interface {{ john[key]['sub_iface'] }}
+encapsulation {{ john[key]['encapsulation'] }}
+ip unnumbered loopback0
+ip router isis
+{% endif %}
+{% endfor %}
+{% endif %}
