@@ -1,0 +1,3 @@
+ntp server {{ host['ntp'] }}
+logging {{ host['syslog'] }}
+snmp-server community {{ host['snmp_community'] }} ro
