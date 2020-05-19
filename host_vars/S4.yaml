@@ -1,0 +1,42 @@
+---
+ISIS:
+    nsap: 49.0001.0000.0000.0004.00
+    level: level-1-2
+    interfaces:
+        g0/1:
+            sub_iface: g0/1.10
+            encapsulation: dot1q 10
+        g0/2:
+            sub_iface: g0/2.10
+            encapsulation: dot1q 10
+        loo0:
+            ipaddr: 4.4.4.4 255.255.255.255
+
+
+Etherchannel:
+    interfaces:
+        - gigabitEthernet1/2
+        - gigabitEthernet1/3
+    group: 1
+    protocol: active
+
+Trunked:
+    trunk:
+        interfaces:
+            gig0/3:
+                allowed_vlans: 10,20
+            gig1/0:
+                allowed_vlans: 30,40
+            gig1/1:
+                allowed_vlans: 50,60
+
+
+VLAN:
+  - number: 10
+    name: TEN
+  - number: 20
+    name: TWENTY
+  - number: 30
+    name: THIRTY
+  - number: 40
+    name: FORTY
