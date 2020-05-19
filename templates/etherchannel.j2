@@ -1,0 +1,10 @@
+{% if 'Etherchannel' in host.facts %}
+{% for iface in host.facts.Etherchannel.interfaces %}
+ interface {{ iface }}
+switchport trunk encapsulation dot1q
+switchport mode trunk
+shutdown
+channel-group {{ host.facts.Etherchannel.group }} mode {{ host.facts.Etherchannel.protocol }}
+no shut
+{% endfor %}
+{% endif %}
