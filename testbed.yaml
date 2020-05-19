@@ -1,0 +1,120 @@
+---
+testbed:
+
+  credentials:
+    default:
+      username: "john"
+      password: "cisco"
+
+devices:
+  S1:
+    alias: S1
+    os: iosxe
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.101
+
+    custom:
+      abstration:
+         order: [os, type]
+
+  S2:
+    alias: S2
+    os: iosxe
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.102
+
+    custom:
+      abstration:
+         order: [os, type]
+
+  S3:
+    alias: S3
+    os: iosxe
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.103
+
+    custom:
+      abstration:
+         order: [os, type]
+
+  S4:
+    alias: S4
+    os: iosxe
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.104
+
+    custom:
+      abstration:
+         order: [os, type]
+
+  S5:
+    alias: S5
+    os: iosxe
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.105
+
+    custom:
+      abstration:
+         order: [os, type]
+
+  S6:
+    alias: S6
+    os: iosxe
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.106
+
+    custom:
+      abstration:
+         order: [os, type]
+
+  S7:
+    alias: S7
+    os: iosxe
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.107
+
+    custom:
+      abstration:
+         order: [os, type]
