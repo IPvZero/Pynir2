@@ -1,0 +1,13 @@
+---
+Trunked:
+    trunk:
+        interfaces:
+            gig0/1:
+                allowed_vlans: 50,60
+            gig0/2:
+                allowed_vlans: 50,60
+VLAN:
+  - number: 50
+    name: FIFTY
+  - number: 60
+    name: SIXTY
