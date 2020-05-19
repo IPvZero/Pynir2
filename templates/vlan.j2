@@ -1,0 +1,7 @@
+{% if 'VLAN' in host.facts %}
+{% set john = host.facts.VLAN %}
+{% for n in john %}
+vlan {{ n.number }}
+name {{ n.name }}
+{% endfor %}
+{% endif %}
