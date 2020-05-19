@@ -115,7 +115,7 @@ if "Diff can be found" in stringer:
                 main()
 
 else:
-    clean_up = "rm -r ospfdiff ospf-current"
+    clean_up = "rm -r configs-diff current-config"
     os.system(clean_up)
     os.system(clear_command)
     print("*" * 75)
