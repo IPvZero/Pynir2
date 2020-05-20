@@ -1,4 +1,6 @@
 {% if 'VLAN' in host.facts %}
+no vlan 2-1001
+no vlan 1006-4094
 {% set john = host.facts.VLAN %}
 {% for n in john %}
 vlan {{ n.number }}
