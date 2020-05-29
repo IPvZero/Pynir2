@@ -422,7 +422,7 @@ Now that we understand the logic of the script, let&#39;s perform a demo and see
 
 ![alt text](https://github.com/IPvZero/Pynir2/blob/master/images/7.png?raw=true)
 
-Now the current state of our network does not match the configuration specified in our desired state. Let&#39;s run the ```Pynir2.py``` script and see if it detects the change. ```Pynir.py``` first starts learning the current network configurations:
+Now the current state of our network does not match the configuration specified in our desired state. Let&#39;s run the ```Pynir2.py``` script and see if it detects the change. ```Pynir2.py``` first starts learning the current network configurations:
 
 ![alt text](https://github.com/IPvZero/Pynir2/blob/master/images/8.png?raw=true)
 
