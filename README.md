@@ -1,8 +1,3 @@
-# Pynir2
-Pynir2 script for full network replacement
-TOPOLOGY:
-![Topology](./pynir2topology.png)
-
 ---
 title: "Tutorial2: Combining Nornir with pyATS"
 date: "2029-05-03"
@@ -17,6 +12,9 @@ A summary of the workflow we will follow in this tutorial is as follows:
 4) We shall then deploy the ```capture-golden``` bash script which effectively instruct pyATS to collect a "golden" profile of our desired state for future comparisons.
 5) We can now periodically deploy the ```pynir2.py``` to ensure our network is compliant with desired state. If ```pynir2.py``` detects no discrepancy between current and desired state, the script simply terminates and reports all configurations are correct. However, should ```pynir2.py``` detect configuration drift, we are alerted and given the option to rollback. Should be choose No, ```pynir2.py``` terminates but will leave all current-config and diff artefacts for our inspection. Should we choose to rollback, ```pynir2.py``` will erase all current configurations from the device me performing a configuration replace operation and move our captured flash image into the running-configuration - leaving nothing but our OOB SSH connectivity. ```pynir2.py``` will then subsequently rebuild the network from scratch to its desired state as specified in our host definition files.
 
+----------------------------------------------------------------------------------------------------
+TOPOLOGY:
+![Topology](./pynir2topology.png)
 ----------------------------------------------------------------------------------------------------
 
 
