@@ -453,12 +453,18 @@ As you can see, combining Nornir with pyATS can allow us to easily monitor and r
 
 
 ### About Me
-My name's John McGovern, otherwise known as IPvZero, and I am a Networking and Automation enthusiast. I create instructional videos on my Youtube channel and share many scripts I create via my Twitter feed.
+My name's John McGovern, I maintain a Youtube channel called IPvZero and I am trainer for CBT Nuggets. 
+I create instructional videos on Python Network Automation.
 
 ### Contact
 
 [Twitter](https://twitter.com/IPvZero)
 
 [Youtube](https://youtube.com/c/IPvZero)
+
+### CBT Nuggets Nornir Skills
+
+[Understand the Nornir Automation Framework](http://learn.gg/nornir-framework)
+[Automate Network Configurations with Nornir](learn.gg/nornir-config)
 
 
