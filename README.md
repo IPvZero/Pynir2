@@ -465,6 +465,7 @@ I create instructional videos on Python Network Automation.
 ### CBT Nuggets Nornir Skills
 
 [Understand the Nornir Automation Framework](http://learn.gg/nornir-framework)
+
 [Automate Network Configurations with Nornir](learn.gg/nornir-config)
 
 
