@@ -468,4 +468,5 @@ I create instructional videos on Python Network Automation.
 
 [Automate Network Configurations with Nornir](http://learn.gg/nornir-config)
 
+[Understand Automation Security](http://learn.gg/auto-sec)
 
