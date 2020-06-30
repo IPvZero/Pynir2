@@ -21,8 +21,13 @@ You can find more information about the project at:
 
 https://nornir.readthedocs.io/en/latest/
 
+### What is pyATS?
+pyATS is 100% fully developed and implemented using Python, and is designed to be usable independent of any other existing infrastructures. Using the pyATS/Genie CLI feature, network engineers can leverage the power of a highly abstracted Python automation solution to profile, compare, and test the state of the network with no previous knowledge of Python or network programming. 
+The result? A powerful automated testing solution, developed by experts - able to be used by everyone.
 
+You can find more information about the project at:
 
+https://pubhub.devnetcloud.com/media/genie-docs/docs/index.html
 
 
 ### Tutorial Workflow & Overview
