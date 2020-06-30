@@ -16,7 +16,10 @@ pip3 install pyfiglet
 Nornir is a pluggable multi-threaded framework written in python to be used with python, developed by David Barroso (creator of the NAPALM library). 
 It is an extremely powerful automation solution that provides an abstraction layer for inventory management and executes tasks with concurrency.
 The result? Exceptionally fast and flexible automation!
-You can find more information about the project at: https://nornir.readthedocs.io/en/latest/
+
+You can find more information about the project at: 
+
+https://nornir.readthedocs.io/en/latest/
 
 
 
