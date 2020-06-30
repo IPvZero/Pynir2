@@ -1,0 +1,4 @@
+pip3 install nornir
+pip3 install pyats[full]
+pip3 install nornir-scrapli
+pip3 install pyfiglet
