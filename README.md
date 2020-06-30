@@ -3,6 +3,17 @@ title: "Tutorial2: Combining Nornir with pyATS"
 date: "2029-05-03"
 tags: ["nornir", "pyATS"]
 ---
+
+### Dependencies
+
+```
+pip3 install nornir
+pip3 install pyats[full]
+pip3 install nornir-scrapli
+pip3 install pyfiglet
+
+```
+
 This tutorial aims to provide a simple use-case for combining Nornir and pyATS together in order to profile your current network configurations and implement desired state - as specified in host variable definition files.
 
 A summary of the workflow we will follow in this tutorial is as follows:
