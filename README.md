@@ -91,7 +91,7 @@ Importantly, you&#39;ll notice a ```capture-golden``` file. This is a very simpl
 
 ```bash
 #!/bin/bash
-pyats learn config vlan --testbed-file testbed.yaml --output golden-config
+pyats config vlan --testbed-file testbed.yaml --output golden-config
 ```
 
 
@@ -370,7 +370,7 @@ def load_vlan(task):
     
 
 
-The next part of the script is effectively what executes first and precedes custom functions (with will only execute upon certain conditions). Let&#39;s look at it. First we use the OS and Subprocess python modules to first execute the shell command ```pyats pyats learn config vlan --testbed-file testbed.yaml --output current-config``` to relearn the current state of the network&#39;s runnings configs and well as currents VLANs, and then run a diff between the current configs, and our previously saved golden config – ```["pyats", "diff", "golden-config/", "current-config", "--output", "configs-diff"]```. We then read the output and search for the string ```Diff can be found```. If a difference is found, we are alerted to the discrepancy and offered the choice to rollback to our desired state.
+The next part of the script is effectively what executes first and precedes custom functions (with will only execute upon certain conditions). Let&#39;s look at it. First we use the OS and Subprocess python modules to first execute the shell command ```pyats learn config vlan --testbed-file testbed.yaml --output current-config``` to relearn the current state of the network&#39;s runnings configs and well as currents VLANs, and then run a diff between the current configs, and our previously saved golden config – ```["pyats", "diff", "golden-config/", "current-config", "--output", "configs-diff"]```. We then read the output and search for the string ```Diff can be found```. If a difference is found, we are alerted to the discrepancy and offered the choice to rollback to our desired state.
 
 ```python
 current = "pyats learn config vlan --testbed-file testbed.yaml --output current-config"
