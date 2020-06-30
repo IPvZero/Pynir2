@@ -13,6 +13,8 @@ pip3 install nornir-scrapli
 pip3 install pyfiglet
 ```
 
+### Tutorial Workflow & Overview
+
 This tutorial aims to provide a simple use-case for combining Nornir and pyATS together in order to profile your current network configurations and implement desired state - as specified in host variable definition files.
 
 A summary of the workflow we will follow in this tutorial is as follows:
